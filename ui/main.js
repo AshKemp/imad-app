@@ -21,8 +21,7 @@ button.onclick = function(){
     request.send(null);
 };
 
-var nameInput = document.getElementById("name");
-var Name = nameInput.value;
+
 var submit = document.getElementById("submitBtn");
 submit.onclick = function() {
     // Make a request to the server and send the home
@@ -49,6 +48,8 @@ submit.onclick = function() {
         }
     };
     // Make the request
+    var nameInput = document.getElementById("name");
+    var Name = nameInput.value;
     request.open("GET","http://kmuraliashwin.imad.hasura-app.io/submit-name?name="+Name,true);
     request.send(null);
     
