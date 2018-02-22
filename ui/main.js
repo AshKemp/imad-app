@@ -20,7 +20,7 @@ var button = document.getElementById("counter");
 button.onclick = function(){
     
     // Create the request 
-    var request = new XMLHTTPRequest();
+    var request = new XMLHttpPRequest();
     
     // Capture the response and store it in a variable
     request.onreadystatechange = function() {
