@@ -38,3 +38,19 @@ button.onclick = function(){
     request.open("GET","http://kmuraliashwin.imad.hasura-app.io/counter",true);
     request.send(null);
 };
+
+var nameInput = document.getElementById("name");
+var Name = nameInput.value;
+var submit = document.getElementById("submitBtn");
+submit.onclick = function() {
+    // Make a request to the server and send the home
+    
+    // Capture the list of names and render it as a list
+    var names = ["name1","name2","name3"];
+    var list = '';
+    for(var i=0;i<names.length;i++) {
+        list = "<li>"+names[i]+"</li>";
+    }
+    var ul = document.getElementById("nameList");
+    ul.innerHTML = list;
+}
