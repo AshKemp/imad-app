@@ -125,7 +125,7 @@ var name = req.query.name;
    res.send(JSON.stringify(names));
 });
 
-app.get('/articles/:articleName', function (req, res) {
+app.get('/:articleName', function (req, res) {
 //   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
     pool.query("SELECT * from Article where title='"+req.params.articleName+"'",function(err,result) {
         if(err) {
