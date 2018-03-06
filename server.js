@@ -15,50 +15,50 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
-var articles = {
-    'article-one' : {    
-  title: 'Article One | Ashwin Km',
-  heading : 'Article One',
-  date : 'Feb 21 2018',
-  content : ` <p>
-                This is the content of the first article.
-                This is the content of the first article.
-                This is the content of the first article.
-                This is the content of the first article.
-                This is the content of the first article.
-                This is the content of the first article.This is the content of the first article.
-            </p>
-            <p>
-                This is the content of the first article.
-                This is the content of the first article.
-                This is the content of the first article.
-                This is the content of the first article.
-                This is the content of the first article.This is the content of the first article.This is the content of the first article.
-            </p>
-            <p>
-                This is the content of the first article.
-                This is the content of the first article.
-                This is the content of the first article.
-                This is the content of the first article.This is the content of the first article.This is the content of the first article.
-            </p>`
-},
-    'article-two' :{
-        title: 'Article Two | Ashwin Km',
-  heading : 'Article Two',
-  date : 'Feb 20 2018',
-  content : ` <p>
-                This is the content for the article two.
-            </p>`
-    },
-    'article-three' :{
-       title: 'Article Three | Ashwin Km',
-  heading : 'Article Three',
-  date : 'Feb 20 2018',
-  content : ` <p>
-                This is the content for the article three.
-            </p>`
-    }
-};
+// var articles = {
+//     'article-one' : {    
+//   title: 'Article One | Ashwin Km',
+//   heading : 'Article One',
+//   date : 'Feb 21 2018',
+//   content : ` <p>
+//                 This is the content of the first article.
+//                 This is the content of the first article.
+//                 This is the content of the first article.
+//                 This is the content of the first article.
+//                 This is the content of the first article.
+//                 This is the content of the first article.This is the content of the first article.
+//             </p>
+//             <p>
+//                 This is the content of the first article.
+//                 This is the content of the first article.
+//                 This is the content of the first article.
+//                 This is the content of the first article.
+//                 This is the content of the first article.This is the content of the first article.This is the content of the first article.
+//             </p>
+//             <p>
+//                 This is the content of the first article.
+//                 This is the content of the first article.
+//                 This is the content of the first article.
+//                 This is the content of the first article.This is the content of the first article.This is the content of the first article.
+//             </p>`
+// },
+//     'article-two' :{
+//         title: 'Article Two | Ashwin Km',
+//   heading : 'Article Two',
+//   date : 'Feb 20 2018',
+//   content : ` <p>
+//                 This is the content for the article two.
+//             </p>`
+//     },
+//     'article-three' :{
+//       title: 'Article Three | Ashwin Km',
+//   heading : 'Article Three',
+//   date : 'Feb 20 2018',
+//   content : ` <p>
+//                 This is the content for the article three.
+//             </p>`
+//     }
+// };
 
 function createTemplate(data) {
     var title = data.title;
